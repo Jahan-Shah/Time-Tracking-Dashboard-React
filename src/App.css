@@ -1,0 +1,113 @@
+.user__name {
+  line-height: 1.2;
+  font-size: 2.5rem;
+  font-weight: var(--fw-reg);
+}
+
+.profile__pic {
+  height: 6rem;
+  aspect-ratio: 1;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+.container {
+  display: flex;
+  gap: 30px;
+}
+
+.report {
+  font-size: 1rem;
+  color: var(--neutral-400);
+  padding-top: 2.6rem;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 255px;
+  overflow: hidden;
+  border-radius: 0.8rem;
+  background-color: var(--neutral-200);
+}
+
+.filter {
+  height: 100%;
+  padding: 22px 34px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profile {
+  padding: 32px 28px 20%;
+  color: white;
+  background-color: var(--clr-primary);
+  border-radius: 0.8rem;
+}
+
+input[type="radio"] {
+  display: none; /* Hide the actual radio button */
+}
+
+label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.unchecked {
+  color: var(--neutral-300);
+}
+
+.checked {
+  color: white;
+}
+
+label:hover {
+  color: white;
+}
+
+@media (max-width: 539px) {
+  .user__name {
+    font-size: 1.5rem;
+  }
+  .container {
+    margin-top: 2rem;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+  }
+  .user {
+    width: 325px;
+  }
+
+  .profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 32px 28px;
+  }
+  .username {
+    display: block;
+  }
+
+  .profile__pic {
+    height: 4rem;
+  }
+
+  .report {
+    padding: 0;
+  }
+
+  .item__container {
+    grid-template-columns: 1fr;
+  }
+
+  .filter {
+    flex-direction: row;
+    padding: 22px 34px;
+  }
+}
